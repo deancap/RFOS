@@ -46,17 +46,14 @@ function validateMasterData() {
     CONFIG.SHEETS.OLT,
     CONFIG.SHEETS.CLUSTERS,
     CONFIG.SHEETS.SITES,
-    "11_Barangays"
+    CONFIG.SHEETS.BARANGAYS
 
   ];
 
-  requiredSheets.forEach(name => {
+  requiredSheets.forEach(function(name){
 
-    if (!getSheet(name)) {
+    getSheet(name);
 
-      throw new Error("Missing sheet : " + name);
-
-    }
 
   });
 

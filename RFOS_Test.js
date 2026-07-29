@@ -1,13 +1,25 @@
-function testWorkflow(){
+/**
+ * ==========================================================
+ * DEBUG PROJECT REGIONS
+ * ==========================================================
+ */
 
-  let stage = "Survey";
+function debugProjectRegions() {
 
-  while(stage){
+  const regions = loadProjectRegions();
 
-    Logger.log(stage);
+  Logger.log("Project Regions = " + regions.length);
 
-    stage = nextStage(stage);
+  regions.forEach(function(row, index) {
 
-  }
+    Logger.log(
+      index +
+      " | PROJECT = " +
+      row[PROJECT_REGION_COLUMNS.PROJECT_ID] +
+      " | REGION = " +
+      row[PROJECT_REGION_COLUMNS.REGION]
+    );
+
+  });
 
 }

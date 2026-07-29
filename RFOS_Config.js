@@ -60,22 +60,15 @@ const CONFIG = {
   SHEETS: {
 
     PROJECTS: "03_Projects",
-
+    PROJECT_REGIONS: "04_Project_Regions",
     EMPLOYEES: "05_Employees",
-
-    OLTS: "06_OLT_POI",
-
+    OLT: "06_OLT_POI",
     CLUSTERS: "07_Clusters",
-
     SITES: "08_Sites",
-
     BARANGAYS: "11_Barangays",
-
     ACTIVITY_TYPES: "12_Activity_Types",
-
-    DAILY_LOG: "Daily_Operations_Log",
-
-    WORKFLOW: "15_Workflow_Master"
+    WORKFLOW: "15_Workflow_Master",
+    DAILY_LOG: "Daily_Operations_Log"
 
   }
 
@@ -254,12 +247,28 @@ const PROJECT_COLUMNS = {
   PROJECT_ID: 0,
   PROJECT_NAME: 1,
   CLIENT: 2,
-  REGION: 3,
-  PROVINCE: 4,
-  START_DATE: 5,
-  END_DATE: 6,
-  STATUS: 7,
-  REMARKS: 8
+  CATEGORY: 3,
+  PHASE: 4,
+  COMPLEXITY: 5,
+  CONTRACT_VALUE: 6,
+  START_DATE: 7,
+  TARGET_COMPLETION: 8,
+  STATUS: 9,
+  PRIORITY: 10,
+  PROJECT_MANAGER: 11
+
+};
+
+/* ==========================================================
+ * 04_PROJECTS_REGION
+ * ==========================================================
+ */
+
+
+const PROJECT_REGION_COLUMNS = {
+
+  PROJECT_ID: 0,
+  REGION: 1
 
 };
 
